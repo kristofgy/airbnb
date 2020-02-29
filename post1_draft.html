@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Untitled</title>
+<meta name="Generator" content="Cocoa HTML Writer">
+<meta name="CocoaVersion" content="1894.3">
+<style type="text/css">
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 51.0px 'Avenir Light'; color: #313131}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Avenir; color: #313131; min-height: 23.0px}
+p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px Avenir; color: #313131}
+p.p4 {margin: 0.0px 0.0px 0.0px 28.0px; text-indent: -28.0px; font: 17.0px Avenir; color: #313131}
+</style>
+<style>
+*{
+    
+    margin:0px;
+    
+}
+
+.container{
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.header{
+    background-color:green;
+    height:40px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:white;
+    font-family: 'Avenir-Book'; font-weight: normal; font-style: normal; font-size: 17.00pt;
+/*    margin-bottom:30px;*/
+    padding-top:10px;
+    margin-bottom:30px;
+
+}
+
+
+img{
+    max-width:700px;
+}
+
+.editor_table{
+    width:100%;
+    border : 1px;
+    border-collapse: collapse;
+    font-family: "Avenir";
+}
+.editor_table, th, td {
+    border: 1px solid #bbb;
+    padding: 5px;
+    text-align: left;
+}
+
+blockquote.strike_quote, blockquote.cite, blockquote[type="cite"] {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 7px !important;
+    border-left: 2px solid #0080ff !important;
+    color: #0080ff !important;
+}
+
+blockquote.strike_code_block {
+    background-color:lightgray;
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 7px !important;
+    color: #0080ff !important;
+}
+
+a { color: rgba(255,0,0,1.0);}</style></head>
+<body><div class="header" style="background-color: rgba(255,0,0,1.0);">Untitled</div><div class="container">
+<p class="p1">Introduction to exploratory data analysis with Python</p>
+<p class="p2"><br></p>
+<p class="p3">In this tutorial, we will go trough some simple data visualisations that you can perform as first steps to explore your dataset. We will use Airbnb data on Berlin from <a href="http://insideairbnb.com">insideairbnb.com</a> (link) and examine:</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>the histogram of price</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>the distribution of price by listing type</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>and the impact of size on price</p>
+<p class="p2"><br></p>
+<p class="p3">We will use the following Python packages:</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>pandas for data management</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>numpy and Scipy for calculations</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>seaborn and matplotlib for visualisations</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">First, let’s import the Airbnb data with pandas:</p>
+<p class="p2"><br></p>
+<p class="p3">Our dataset consists of 24586 rows (Airbnb offers) and 106 columns (variables). First, we should clean our data from offers that are not active any more, but are still available on the platform:</p>
+<p class="p2"><br></p>
+<p class="p3">Now, we have offers that were available at least one day in the period Nov 2018 - nov 2019.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p3">Next, let’s see the variable for price:</p>
+<p class="p2"><br></p>
+<p class="p3">We need to transform the data from string fo float:</p>
+<p class="p2"><br></p>
+<p class="p3">Now we can examine the distribution:</p>
+<p class="p2"><br></p>
+<p class="p3">The average (91) is much higher than the average (59), therefore we should see a price distribution with a long tail. The maximum value is almost 9000, therefore it makes sense to clean the data from outliers, e.g. cut off the top 2%:</p>
+<p class="p2"><br></p>
+<p class="p3">Also, drop observations with no price information:</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">First, let’s examine the histogram of price:</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">Indeed, we have a population with a skewed distribution. If we take the logarithm of price, the distribution will be much closer to Gaussian:</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">In the graphs, two things are combined: the histogram and the kernel density estimation (KDE) of the distribution.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">Next, let’s examine the distribution by listing type.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p3">As shared rooms form only a small fraction of listings, we will focus on entire homes and private rooms.<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p3">First, let’s define a list of colours with HEX colour codes.</p>
+<p class="p2"><br></p>
+<p class="p3">We want to prepare KDE plots of two populations:<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">The figure reveal a clear segmentation: private rooms are much cheaper (median: 40) than entire homes (75).<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">A nice way to visualise distributions is the so-called violinplot: it takes the KDE of the population and presents it on the two sides of a whisker plot:</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">We can further condense the plot by splitting the two graphs and merging them into each other:</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">This way we have a clearer insight into the data from the whisker plot - the dashed lines provides the quartiles of the distribution (25th percentile, median, 75th percentile).<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p3">Finally, we can experiment with the relationship between price and the listing characteristic. As an example, we can examine if there is a relationship between price and the number of reviews:</p>
+<p class="p2"><br></p>
+<p class="p3">With Scipy, we can also calculate the correlation:<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p3">Based on this preliminary exercise, we see that there is no relationship between price and number of reviews received.</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+</div></body>
+</html>
