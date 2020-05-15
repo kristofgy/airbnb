@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Airbnb research</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/map.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Airbnb in the time of COVID-19: the case of Warsaw</h1>
+            <h2 class="subheading">Have prices changed relative to 2019?</h2>
+            <span class="meta">Posted by
+              <a href="https://twitter.com/kgyodi">Kristóf Gyódi</a>
+              on May 15, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        
+        <p class="p3">During the period of economic prosperity, purchasing real-estate for Airbnb rental has been a popular form of investment in major cities. Warsaw has been no exception, with strong economic incentives for short-term accommodation provision in recent years: Airbnb hosts benefited from the growing number of tourists, as well as from the rising flat prices. </p>
+
+
+        
+<p> These months a quick return of investment has become less secure. The market for short-term home rental, as well as the entire tourism sector has turned upside down. Tourists are trapped in their homes and cancelled reservations, while short-term rental even became prohibited for around a month (from the 31.03 to 04.05), with the exception of certain groups (business travellers, medical personnel and people under quarantine). As of today, the strictest restrictions are slowly lifted in many countries, but the chances of open borders, quick trips and cheap flights remain low. </p>
+
+       <p> In an exciting post <a href="https://www.delab.uw.edu.pl/pl/setki-mieszkan-z-airbnb-trafiaja-na-rynek-najmu-dlugoterminowego/">(avaialble in Polish)</a> Łukasz Nawaro showed that a considerable share of Airbnb hosts has already decided to pivot to the long-term rental market. We can also expect that more and more flats from Airbnb will re-appear on the real-estate market. 
+
+        <p> What was the state of the market at the end of March? We checked to what extent hosts adjusted their offers to the changing conditions. A previous experiment from 2019 was repeated between the 27-29 in March: using web-scraping, we collected offers for 2 persons for a stay in the period 17-19 in April. Our sample from 2019 concerns stays for the period 12-14 in April. The collected prices refer to the full cost of the accommodation, including the service and cleaning fees.
+
+        <p><b>Did prices change with the dramatic shift in demand?</b> Table 1. presents the number of the analysed offers, along with statistics on the price distribution. A decrease of prices can be observed: in relation to the previous year, the median price has decreased by 8%. Comparing the samples to each other (Figure 1), it can be also noted that the distribution of the 2020 prices (red) is shifted downwards in relation to the 2019 rates. The values of the first quartile (25% of offers has same or smaller price), median and third quartile are all lower. However, the average price has decreased by a lower extent due to the stronger presence of high-end offers (listings costing 2000 PLN for a weekend). 
+        
+        <p>Tabel 1. Price statistics for offers in 2019 and 2020 (in PLN)
+        <table style="width:100%">
+          <tr>
+            <th>Year</th>
+            <th>Number</th> 
+            <th>1st quartile</th>
+            <th>Median</th>
+            <th>3rd quartile</th>
+            <th>Average</th>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>2748</td> 
+            <td>350</td>
+            <td>448</td>
+            <td>587</td>
+            <td>513</td>
+            
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>2387</td> 
+            <td>389</td>
+            <td>487</td>
+            <td>623</td>
+            <td>531</td>
+          </tr>
+        </table>
+        
+        
+        
+        <p>Figure 1. Price distribution       
+        <img class="img-fluid" src="img/pricegap.png" alt="">
+        
+        
+        <p><b>How did prices evolve in the various districts of Warsaw?</b> Figure 2. introduces median prices in in the districts with at least 30 offers. The data suggests that a significant fall in prices occurred in the districts with the greatest density of Airbnb listings: City Centre (Śródmieście)- decrease by 13% and Wola – by 9%. On the other hand, in various districts prices did not change (Wilanów, Mokotów, Praga Południe) or even increased (Włochy).
+        
+        
+        <p>Figure 2. Median prices in various districts     
+        <img class="img-fluid" src="img/city_number.png" alt="">
+        
+        <p><b>What is the strategy of the different types of hosts?</b> We checked the listings offered by hosts owning:
+        
+        <p class="p4">-<span class="Apple-converted-space"> </span>1</p>
+        <p class="p4">-<span class="Apple-converted-space"> </span>2 or 3</p>
+        <p class="p4">-<span class="Apple-converted-space"> </span>at least 4 listings (“professional” hosts)</p>
+        
+        
+        <p>and calculated the median prices for 2019 and 2020. The numbers show that the corresponding decrease of prices was at the level of 5%, 6%, and 13%. This suggests that the professional hosts adjusted their offers to the greatest extent.  
+
+        <p>Finally, 798 offers available at both time periods were identified in our samples. In the case of 358 listings, prices decreased (in the case of 237 by more than 10%), while in the case of 438 prices increased (for 153 by more than 10%).
+
+      
+       <h2 class="section-heading">Conclusions</h2>
+      
+      
+      <p class="p3">By the end of March, Airbnb rates decreased by around 8%. This change is primarily driven by professional hosts owning flats in the city centre. In the districts characterized by a lower density of Airbnb offers and lower share of professional hosts, prices have not changed yet. This may suggest that non-professional hosts reacted slower or turned to the long-term real estate market. 
+
+             <p> All signs point towards a significant fall in the revenues from short-term home rental. This may be the first year since 2015 with a falling number of Airbnb listings, potentially increasing the number of available flats for local residents. 
+
+ </p>
+
+
+
+  
+
+    
+
+        
+         
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+              <li class="list-inline-item">
+              <a href="https://twitter.com/kgyodi">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Kristóf Gyódi</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
