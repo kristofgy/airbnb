@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Airbnb research</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/airbnb_pic.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Airbnb during COVID-19 across European cities</h1>
+            <h2 class="subheading">New strategy of hosts after the big shock?</h2>
+            <span class="meta">Posted by
+              <a href="https://twitter.com/kgyodi">Kristóf Gyódi</a>
+              on Sept 17, 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        
+<h2 class="section-heading">Introduction</h2>
+
+<p> The ongoing COVID-19 pandemic has profound economic and social impact worldwide. Following the outbreak of the novel coronavirus in China, various European countries became the next hotspot areas in March 2020. Social distancing and lockdowns disrupted most economic activities, including the services sector. The collapse of demand for tourism services was especially drastic during the spring months: <a href="https://www.eurocontrol.int/publication/eurocontrol-comprehensive-assessment-covid-19s-impact-european-air-traffic">flight numbers decreased by 88%</a>, while <a href="https://str.com/press-release/str-europe-hotel-performance-april-2020">hotel occupancy decreased by 85%</a> in April relative to last year. The summer brought slightly better numbers with the reopening of economies, but the situation of the industry is still severe. </p>
+
+
+<p> Without international travel, neither traditional hotels nor Airbnb hosts can operate within the previous rules of the game. According to industry reports by <a href="https://str.com/data-insights-blog/coronavirus-hotel-industry-data-news">STR</a>, hotels significantly decreased prices to attract visitors. How about Airbnb? Based on the characteristics of peer-to-peer services provision, we can expect that Airbnb hosts reacted differently to the crisis. </p> 
+
+
+<p>First, short-term rental is not the primary source of income for many hosts. In the absence of tourists, a large number of hosts could have decided to withdraw their homes from Airbnb and redirect them for long-term rental until tourism rebounds. This may have a positive effect on cities struggling with overtourism and shortage of housing. 
+</p> 
+
+<p> Second, hosts that decided to stay on Airbnb could have also adjusted services. Various new potential use-cases may have emerged during the months of social-distancing, such as renting flats for home-office or self-isolation. According to <a href="https://www.latimes.com/business/story/2020-06-07/airbnb-coronavirus-demand">Airbnb CEO Brian Chesky</a>, the length of bookings increased during the pandemic, along with the role of rural areas.<p>
+
+<p><b>How did hosts react to the pandemic?</b> In this blog post, I present some data insights about Airbnb for the first phase of the COVID crisis. I analyse the following attributes in 12 EU cities:
+
+
+
+<p class="p4">-<span class="Apple-converted-space"> </span>number of active listings (booked for min 1 night in next two months)</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>average price per night</p>
+<p class="p4">-<span class="Apple-converted-space"> </span>lenght of minimum stays</p>
+
+I use data from Inside Airbnb that publishes web-scraped data on Airbnb listings in a large number of cities on a monthly basis. For each analysed city, datasets for each month were downloaded between the period April 2018 - April 2020.
+</p>
+
+<h2 class="section-heading">Analysis</h2>
+
+<p>Let's begin the analysis with changes in supply  - the number of active listings (Figure 1). Airbnb was on a dynamic growth path until February 2020: on average, there were around 9% more active offers than a year ago. Even in March, the number of offers on the platform was higher than a year ago, although numbers fell in Milan, Venice and Stockholm. However, April brought a significant fall of active offers (5%, relative to April 2019). The strongest decrease occurred in Milan (-19%), Stockholm (-17%) and Prague (-15%). In some of the cities, the numbers did not fall below the level of the previous year, but previous growth was eroded, as in Paris or Brussels. The only cities where the size of the market did not fall relative to the previous year was Barcelona and Vienna. Therefore, the results suggest that a significant share of Airbnb hosts withdraw listings, and potentially moved to the long-term rental market. 
+</p>
+
+     <p>Figure 1. Number of active listings: Percentage change from same month previous year (below: average across cities)       
+<img class="img-fluid" src="img/airbnb_active.jpg" alt="">
+
+
+
+
+Next, let's examine changes in prices (Figure 2). Prices for accommodation on Airbnb have been consistently higher than a year ago, also including the months of the pandemic. Unlike hotels, Airbnb hosts did not decrease prices, but kept around 8% higher relative to 2019. Somewhat surprisingly, rates stayed high even in the Italian cities. Therefore, these results suggest that Airbnb hosts were not forced to drop rates, and were able to flexibly adapt to the changing market conditions. </p>
+
+     <p>Figure 2. Airbnb averege price: percentage change from same month previous year (below: average across cities)      
+<img class="img-fluid" src="img/airbnb_adr.jpg" alt="">
+
+
+
+<p> Finally, let's analyse changes in the share of offers that require longer bookings. Potential new use-cases may include the rental of second homes for local residents, who are in need of flats for distant work or self-isolation. The length of such stays should be longer than the usual short-term trips, but shorter than a long-term lease. Therefore, the share of Airbnb offers with minimum 14 day stays is calculated (Figure 3). Before the pandemic, the average share of active oﬀers with minimum 14 night stays had been between 4-5%, and has increased to 7% by April. The share of such oﬀers has risen in all of the analysed cities. 
+
+</p>
+
+  <p>Figure 3. Share of listings with minimum two week stays (below: average across cities)    
+<img class="img-fluid" src="img/long.jpg" alt="">
+
+      
+<h2 class="section-heading">Conclusions</h2>
+      
+      
+<p class="p3">The results support that Airbnb hosts were less constrained and were able to pivot towards other services than short-term accommodation provision. A significant share of flats returned to the long-term rental market that most probably contributed to the <a href="https://www.bbc.com/news/world-europe-53025890">drop in rents</a> experienced in various major cities.</p>
+
+<p class="p3">Moreover, the share of offers for longer stays increased in all 12 analysed cities. This may suggest a greater importance of new use-cases, such as renting homes for local residents for home-oﬃce or self-isolation.</p>
+
+<p class="p3">This preliminary analysis shows that Airbnb is transforming and adopting to the "new normal". In the absence of large fixed costs, hosts can relatively easily adjust supply to demand. The lower number of listings should lead to a decrease of problems related to overtourism and housing shortage. However, it is uncertain whether this process is permanent.  
+</p>
+
+
+
+
+
+
+
+  
+
+    
+
+        
+         
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+              <li class="list-inline-item">
+              <a href="https://twitter.com/kgyodi">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+                
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Kristóf Gyódi</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
